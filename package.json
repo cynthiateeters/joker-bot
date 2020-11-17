@@ -1,16 +1,16 @@
 {
   "name": "joker-bot-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Send joke to Discord Chat Server",
   "main": "bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bot.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cynthiateeters/joker-bot.git"
   },
-  "author": "",
+  "author": "Cynthia Teeters",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cynthiateeters/joker-bot/issues"
