@@ -4,7 +4,13 @@ const client = new Discord.Client();
 const dotenv = require('dotenv');
 
 dotenv.config();
-const clientID = process.env.CLIENT_ID;
+const clientID = process.env.DISCORD_BOT_TOKEN;
+
+client.on('ready', () => {
+  client.user.setActivity('birds in the back yard', { type: 'WATCHING' });
+  console.log(`${client.user.tag} ${client.user.avatarURL()}`);
+  console.log(`Is this a bot? ${client.user.bot}`);
+});
 
 console.log('running ❤️');
 
@@ -14,6 +20,13 @@ client.login(clientID);
 
 client.on('message', (msg) => {
   console.log(msg.content);
+
+  // If the message is "what is my avatar"
+  if (msg.content === 'what is my avatar') {
+    // Send the user's avatar URL
+    msg.reply(msg.author.displayAvatarURL());
+  }
+
   if (
     msg.channel.id == '778302184173076481' &&
     msg.content.toLowerCase().includes('joke')
