@@ -20,7 +20,9 @@
   "dependencies": {
     "canvas": "^2.7.0",
     "discord.js": "^12.4.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "images-scraper": "^6.1.1",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
