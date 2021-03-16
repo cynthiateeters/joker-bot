@@ -59,9 +59,5 @@ client.on('message', async (message) => {
 
   console.log(`[message content]: ${message.content}`);
 
-  if (message.member.displayName === '!Sebastian') {
-    message.reply(
-      `${message.member.displayName} is my best friend!🤗 He helps me with my jokes.`
-    );
-  }
+
 });
