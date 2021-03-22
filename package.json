@@ -18,13 +18,16 @@
   },
   "homepage": "https://github.com/cynthiateeters/joker-bot#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "canvas": "^2.7.0",
     "discord.js": "^12.4.1",
     "dotenv": "^8.2.0",
     "images-scraper": "^6.1.1",
+    "leaflet-geosearch": "^3.2.2",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.1"
   }
 }
